@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  @apply text-white m-0;
+  background-color: #010114;
+}
+
+h1 {
+  @apply font-bold text-4xl mb-6;
+}
+
+.app {
+  @apply h-screen w-screen;
+}
+
+.game {
+  @apply flex flex-wrap flex-row -mx-2;
+}
+
+.game-title {
+  @apply text-center py-6 flex flex-col;
+}
+
+.hole {
+  @apply w-1/4 px-2 mb-4 relative overflow-hidden;
+
+  background: url('/img/hole.svg') no-repeat center center;
+  background-size: cover;
+}
+
+.hole-decoration {
+  @apply relative w-full;
+
+  padding-top: 100%;
+}
+
+.bug {
+  @apply absolute left-0 w-full h-full;
+  background: url('/img/bug.svg') no-repeat bottom center;
+  top: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: 3;
+}
+
+.hole.up .bug {
+  top: 0;
+  opacity: 1;
+}
+
+#start {
+  @apply rounded-full py-3 px-6 my-2 mx-auto inline-block;
+  @apply border-pink-500 border-2;
+
+  max-width: 400px;
+}

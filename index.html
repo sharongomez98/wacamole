@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container mx-auto">
+        <div class="game-title">
+          <h1>Debugging Game</h1>
+          <span class="score">
+            <span class="score-label">Puntos:</span>
+            <span class="score-value">0</span>
+          </span>
+          <button id="start" type="button">
+            Iniciar Juego
+          </button>
+        </div>
+    
+        <div class="game">
+          <!-- 4: Agregar al menos 8 agujeros con un bug -->
+          <div class="hole">
+            <div class="bug"></div>
+            <div class="hole-decoration"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
